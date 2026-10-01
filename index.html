@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <script>(function(){var r=document.documentElement;r.classList.remove('no-js');
 /* la firma: finché main.js non parte c'è il pavimento senza coperta; se il codice non arriva, dopo 2,5 s la coperta intera */
 try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add('firma-attesa');window.__attesaCoperta=setTimeout(function(){r.classList.remove('firma-attesa')},2500)}}catch(e){}})()</script>
@@ -20,15 +21,72 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Winky+Sans:wght@600;700;800&amp;family=Ysabeau+Infant:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
 <script src="js/main.js?v=1" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VeterinaryCare","name":"Ambulatorio Veterinario Sismondi","vatID":"IT06043240966","description":"Ambulatorio veterinario per cani e gatti in Via Giancarlo Sismondi 67 a Milano, dal 2008: medicina, medicina comportamentale, chirurgia, radiologia, ecografie, esami di laboratorio, visite a domicilio, anagrafe canina; agopuntura e omeopatia.","url":"https://rotenzark.github.io/veterinario-sismondi/","image":"https://rotenzark.github.io/veterinario-sismondi/img/og.jpg","telephone":"+39 02 7395 5676","email":"ambulatoriosismondi@yahoo.it","foundingDate":"2008","address":{"@type":"PostalAddress","streetAddress":"Via Giancarlo Sismondi 67","postalCode":"20133","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.46569,"longitude":9.23483},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"19:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"13:00"}],"sameAs":["https://www.facebook.com/people/Ambulatorio-Veterinario-Sismondi/100057088015220/"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"98","bestRating":"5"}}
+{
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": "Ambulatorio Veterinario Sismondi",
+  "vatID": "IT06043240966",
+  "description": "Ambulatorio veterinario per cani e gatti in Via Giancarlo Sismondi 67 a Milano, dal 2008: medicina, medicina comportamentale, chirurgia, radiologia, ecografie, esami di laboratorio, visite a domicilio, anagrafe canina; agopuntura e omeopatia.",
+  "url": "https://rotenzark.github.io/veterinario-sismondi/",
+  "image": "https://rotenzark.github.io/veterinario-sismondi/img/og.jpg",
+  "telephone": "+39 02 7395 5676",
+  "email": "ambulatoriosismondi@yahoo.it",
+  "foundingDate": "2008",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Giancarlo Sismondi 67",
+    "postalCode": "20133",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.46569,
+    "longitude": 9.23483
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "10:00",
+      "closes": "13:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "15:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "13:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/people/Ambulatorio-Veterinario-Sismondi/100057088015220/"
+  ]
+}
 </script>
 </head>
 <body>
@@ -142,7 +200,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
         <p class="apertura__frase" data-i18n="h.testo">Cani e gatti, vicino alla Stazione Forlanini. La visita, la diagnosi, la terapia, e ogni procedura discussa con voi; la medicina comportamentale, perché ogni animale ha il suo carattere.</p>
         <p class="voto"><b class="voto__n">4,8</b> <span class="voto__su" data-i18n="h.voto">su Google, 98 recensioni</span></p>
         <blockquote class="citazione">
-          <p>«Le dottoresse che gestiscono l'Ambulatorio Veterinario Sismondi sono diventate per noi un punto di riferimento.»</p>
+          <p lang="it">«Le dottoresse che gestiscono l'Ambulatorio Veterinario Sismondi sono diventate per noi un punto di riferimento.»</p>
           <footer data-i18n="h.chi">Maria D., in una recensione su Google</footer>
         </blockquote>
         <p class="stato" id="orarioStato">Lun–ven 10–13 e 15–19:30 · sab 10–13</p>
@@ -241,9 +299,9 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <h2 id="diconoT" class="capitolo__titolo" data-i18n="d.titolo">Pazienza, cura, chiarezza</h2>
     <p class="voto voto--sezione"><b class="voto__n">4,8</b> <span class="voto__su" data-i18n="d.voto">su Google, 98 recensioni</span></p>
     <ul class="recensioni">
-      <li class="recensione recensione--verde reveal"><p class="recensione__testo">«Ho portato il mio cane presso questo ambulatorio veterinario e non posso che parlarne benissimo. La Dott.ssa Quagliotti che si occupa del mio amico a quattro zampe, si distingue per pazienza, cura e grande professionalità, qualità che si percepiscono sin dal primo momento. Sa ascoltare, rassicurare e spiegare ogni cosa con estrema chiarezza. Capace di tranquillizzare non solo gli animali, ma anche noi proprietari ansiosi! […]»</p><p class="recensione__chi"><b>Benedetta T.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
-      <li class="recensione recensione--blu reveal"><p class="recensione__testo">«Un team che si alterna sempre presente competente empatico sono con loro da 20 per la mia prima gatta ed ora la seconda che assistono dalla nascita Un grazie per il loro lavoro»</p><p class="recensione__chi"><b>Patrizia R.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
-      <li class="recensione recensione--arancio reveal"><p class="recensione__testo">«Ottima esperienza presso questo ambulatorio, uno dei rari aperti a metà agosto. Dottoressa di una gentilezza e di una disponibilità unica. Consiglio vivamente!»</p><p class="recensione__chi"><b>Alex C.</b> <span data-i18n="d.t24">Google, 2024</span></p></li>
+      <li class="recensione recensione--verde reveal"><p lang="it" class="recensione__testo">«Ho portato il mio cane presso questo ambulatorio veterinario e non posso che parlarne benissimo. La Dott.ssa Quagliotti che si occupa del mio amico a quattro zampe, si distingue per pazienza, cura e grande professionalità, qualità che si percepiscono sin dal primo momento. Sa ascoltare, rassicurare e spiegare ogni cosa con estrema chiarezza. Capace di tranquillizzare non solo gli animali, ma anche noi proprietari ansiosi! […]»</p><p class="recensione__chi"><b>Benedetta T.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
+      <li class="recensione recensione--blu reveal"><p lang="it" class="recensione__testo">«Un team che si alterna sempre presente competente empatico sono con loro da 20 per la mia prima gatta ed ora la seconda che assistono dalla nascita Un grazie per il loro lavoro»</p><p class="recensione__chi"><b>Patrizia R.</b> <span data-i18n="d.t25">Google, 2025</span></p></li>
+      <li class="recensione recensione--arancio reveal"><p lang="it" class="recensione__testo">«Ottima esperienza presso questo ambulatorio, uno dei rari aperti a metà agosto. Dottoressa di una gentilezza e di una disponibilità unica. Consiglio vivamente!»</p><p class="recensione__chi"><b>Alex C.</b> <span data-i18n="d.t24">Google, 2024</span></p></li>
     </ul>
     <p class="dicono__nota"><span data-i18n="d.nota">Dalle recensioni su Google, come sono state scritte. La frase in alto è di un'altra cliente, sempre su Google.</span> <a href="https://www.google.com/maps/search/?api=1&amp;query=Ambulatorio+Veterinario+Sismondi+Via+Giancarlo+Sismondi+67+Milano" target="_blank" rel="noopener" data-i18n="d.tutte">Tutte le recensioni su Google</a></p>
   </section>
@@ -280,7 +338,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
       </div>
     </div>
     <div class="cartina reveal">
-      <iframe title="Mappa: Ambulatorio Veterinario Sismondi, Via Giancarlo Sismondi 67, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Ambulatorio%20Veterinario%20Sismondi%2C%20Via%20Giancarlo%20Sismondi%2067%2C%2020133%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 400px"><template><iframe title="Mappa: Ambulatorio Veterinario Sismondi, Via Giancarlo Sismondi 67, Milano" data-i18n-title="w.mappa" src="https://maps.google.com/maps?q=Ambulatorio%20Veterinario%20Sismondi%2C%20Via%20Giancarlo%20Sismondi%2067%2C%2020133%20Milano&amp;z=16&amp;output=embed" width="600" height="400" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Ambulatorio+Veterinario+Sismondi%2C+Via+Giancarlo+Sismondi+67%2C+20133+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </section>
 
@@ -292,7 +350,7 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
     <p class="piede__riga"><span data-i18n="f2.chi">Medicina veterinaria dei piccoli animali, dal 2008</span> · <span data-i18n="f2.piva">P.IVA</span> 06043240966</p>
     <p class="piede__dove">Via Giancarlo Sismondi 67, 20133 Milano · <a href="tel:+390273955676" class="intero">02 7395 5676</a> · <a href="mailto:ambulatoriosismondi@yahoo.it">ambulatoriosismondi@yahoo.it</a></p>
     <p class="piede__orario" data-i18n="f2.orario">Lunedì–venerdì 10–13 e 15–19:30 · sabato 10–13</p>
-    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · orari, voto e recensioni dalla scheda Google (ottobre 2026); i testi dal loro sito; le foto dalla loro pagina Facebook. Il segno e la coperta li abbiamo disegnati noi, dalla coperta delle loro foto.</p>
+    <p class="piede__cred" data-i18n="f2.cred">Sito dimostrativo realizzato da <a href="https://bespokestud.io" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · orari, voto e recensioni dalla scheda Google (ottobre 2026); i testi dal loro sito; le foto dalla loro pagina Facebook. Il segno e la coperta li abbiamo disegnati noi, dalla coperta delle loro foto.</p>
     <p><a class="piede__su" href="#inizio"><span data-i18n="f2.su">Torna su</span> <span class="freccia" aria-hidden="true">↑</span></a></p>
   </div>
 </footer>
@@ -307,5 +365,6 @@ try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches){r.classList.add(
   <img id="lightboxImg" src="" alt="">
 </div>
 
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
